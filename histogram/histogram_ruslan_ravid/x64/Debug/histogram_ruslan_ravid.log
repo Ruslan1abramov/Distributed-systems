@@ -1,0 +1,42 @@
+﻿Build started 11-Jan-18 5:14:40 PM.
+     1>Project "C:\Users\rusla_000\documents\visual studio 2013\Projects\histogram_ruslan_ravid\histogram_ruslan_ravid\histogram_ruslan_ravid.vcxproj" on node 2 (Rebuild target(s)).
+     1>CudaClean:
+         cmd.exe /C "C:\Users\rusla_000\AppData\Local\Temp\tmpc97e620ea81c492195502a57b100e428.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64" -x cu  -I"C:\Program Files\MPICH2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile   -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "C:\Users\rusla_000\documents\visual studio 2013\Projects\histogram_ruslan_ravid\histogram_ruslan_ravid\kernel.cu" -clean
+         
+         C:\Users\rusla_000\documents\visual studio 2013\Projects\histogram_ruslan_ravid\histogram_ruslan_ravid>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64" -x cu  -I"C:\Program Files\MPICH2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile   -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "C:\Users\rusla_000\documents\visual studio 2013\Projects\histogram_ruslan_ravid\histogram_ruslan_ravid\kernel.cu" -clean 
+         kernel.cu
+       AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /DWIN64 /D_DEBUG /D_CONSOLE /D_MBCS /I"C:\Program Files\MPICH2\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include" /I. /FIcuda_runtime.h /c "C:\Users\rusla_000\documents\visual studio 2013\Projects\histogram_ruslan_ravid\histogram_ruslan_ravid\kernel.cu" 
+     1>Project "C:\Users\rusla_000\documents\visual studio 2013\Projects\histogram_ruslan_ravid\histogram_ruslan_ravid\histogram_ruslan_ravid.vcxproj" (1) is building "C:\Users\rusla_000\documents\visual studio 2013\Projects\histogram_ruslan_ravid\histogram_ruslan_ravid\histogram_ruslan_ravid.vcxproj" (1:2) on node 2 (CudaBuildCore target(s)).
+     1>CudaBuildCore:
+         Compiling CUDA source file kernel.cu...
+         cmd.exe /C "C:\Users\rusla_000\AppData\Local\Temp\tmpdd75d28cb0cb4a1ea38141aac55b98ae.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64" -x cu  -I"C:\Program Files\MPICH2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "C:\Users\rusla_000\documents\visual studio 2013\Projects\histogram_ruslan_ravid\histogram_ruslan_ravid\kernel.cu"
+         
+         C:\Users\rusla_000\documents\visual studio 2013\Projects\histogram_ruslan_ravid\histogram_ruslan_ravid>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64" -x cu  -I"C:\Program Files\MPICH2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "C:\Users\rusla_000\documents\visual studio 2013\Projects\histogram_ruslan_ravid\histogram_ruslan_ravid\kernel.cu" 
+     1>C:/Users/rusla_000/documents/visual studio 2013/Projects/histogram_ruslan_ravid/histogram_ruslan_ravid/kernel.cu(31): warning : variable "device" was declared but never referenced
+     1>C:/Users/rusla_000/documents/visual studio 2013/Projects/histogram_ruslan_ravid/histogram_ruslan_ravid/kernel.cu(31): warning : variable "device" was declared but never referenced
+         kernel.cu
+     1>C:/Users/rusla_000/documents/visual studio 2013/Projects/histogram_ruslan_ravid/histogram_ruslan_ravid/kernel.cu(31): warning C4101: 'device' : unreferenced local variable
+     1>Done Building Project "C:\Users\rusla_000\documents\visual studio 2013\Projects\histogram_ruslan_ravid\histogram_ruslan_ravid\histogram_ruslan_ravid.vcxproj" (CudaBuildCore target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Program Files\MPICH2\include" /I"C:\Program Files\MPICH2\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include" /Zi /nologo /W3 /WX- /Od /D WIN32 /D WIN64 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /openmp /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt Source.cpp
+         Source.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\rusla_000\documents\visual studio 2013\Projects\histogram_ruslan_ravid\x64\Debug\histogram_ruslan_ravid.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\MPICH2\lib" /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\lib\x64" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib mpi.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\rusla_000\documents\visual studio 2013\Projects\histogram_ruslan_ravid\x64\Debug\histogram_ruslan_ravid.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\rusla_000\documents\visual studio 2013\Projects\histogram_ruslan_ravid\x64\Debug\histogram_ruslan_ravid.lib" /MACHINE:X64 x64\Debug\kernel.cu.obj
+         x64\Debug\Source.obj
+         histogram_ruslan_ravid.vcxproj -> C:\Users\rusla_000\documents\visual studio 2013\Projects\histogram_ruslan_ravid\x64\Debug\histogram_ruslan_ravid.exe
+       PostBuildEvent:
+         echo copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin\cudart*.dll" "C:\Users\rusla_000\documents\visual studio 2013\Projects\histogram_ruslan_ravid\x64\Debug\"
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin\cudart*.dll" "C:\Users\rusla_000\documents\visual studio 2013\Projects\histogram_ruslan_ravid\x64\Debug\"
+         :VCEnd
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin\cudart*.dll" "C:\Users\rusla_000\documents\visual studio 2013\Projects\histogram_ruslan_ravid\x64\Debug\"
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin\cudart32_91.dll
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin\cudart64_91.dll
+                 2 file(s) copied.
+     1>Done Building Project "C:\Users\rusla_000\documents\visual studio 2013\Projects\histogram_ruslan_ravid\histogram_ruslan_ravid\histogram_ruslan_ravid.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:14.48
